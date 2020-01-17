@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Exon_Skipping:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Exon_Skipping_jar</output-path>
+    <root id="archive" name="Exon_Skipping.jar">
+      <element id="module-output" name="Exon_Skipping" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/commons-cli-1.4/commons-cli-1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/commons-cli-1.4/commons-cli-1.4-tests.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/commons-cli-1.4/commons-cli-1.4-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/commons-cli-1.4/commons-cli-1.4-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/commons-cli-1.4/commons-cli-1.4-test-sources.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/jetbrains/Gene.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/jetbrains/Main.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/jetbrains/Section.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/jetbrains/SkippedExons.java" />
+    </root>
+  </artifact>
+</component>
