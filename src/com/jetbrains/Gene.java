@@ -171,12 +171,13 @@ public class Gene {
 
                         }
                     }
-                    else{
 
-                    }
                 }
 
-
+                int wirklichLeer = 0;
+                if(WTaktuell.size() ==0){
+                    wirklichLeer = wirklichLeer +1;
+                }
                 WTaktuell.removeAll(SVIntron);
 
 
@@ -202,6 +203,7 @@ public class Gene {
 
 
             //wenn skippedExonEvent stattgefunden hat: WTaktuell ist nicht leer
+                if(wirklichLeer != 1){
             if (!WTaktuell.isEmpty()) {
                 //füge der HashMap das skippedExonEvent hinzu
                 if(current == 2){
@@ -213,7 +215,7 @@ public class Gene {
             else {
                 //TODO: achtung hier werden auch die hinzugefügt die einfach vorher schon leer waren ohne dass sie SVs sind
                 SVProts.add(WTGenProteinID);
-            }
+            }}
            }
 
         }
