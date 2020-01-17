@@ -77,4 +77,8 @@ public class SkippedExons {
                 minLenSE
                 ;
     }
+
+    public int getMinNumSE() {
+        return minNumSE;
+    }
 }

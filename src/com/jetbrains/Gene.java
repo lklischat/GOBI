@@ -171,29 +171,20 @@ public class Gene {
 
                         }
                     }
-                }
-                /*System.out.println(WTaktuell.size());
-                if(WTaktuell.size() == 1){
-                    for (Section sect : WTaktuell){
-                        int begWT = sect.getBeginning();
-                        int endWT = sect.getEnding();
-                        for(Section s : SVIntron){
-                            int begSV = s.getBeginning();
-                            int endSV = s.getEnding();
-                            if(begWT == begSV && endWT == endSV){
-                                WTaktuell.clear();
-                            }
-                        }
+                    else{
+
                     }
                 }
-                //WTaktuell.removeAll(SVIntron);
-                System.out.println(WTaktuell.size());
-                System.out.println("hi");*/
-WTaktuell.removeAll(SVIntron);
+
+
+                WTaktuell.removeAll(SVIntron);
+
+
+
 
             //Sets zusammenlegen
 
-               int really = 0;
+              /* int really = 0;
                 Iterator all = WTaktuell.iterator();
                 while(all.hasNext()) {
                     Section aktuell = (Section) all.next();
@@ -206,7 +197,7 @@ WTaktuell.removeAll(SVIntron);
                 }
                 if(really !=2){
                     WTaktuell.clear();
-                }
+                }*/
 
 
 
@@ -219,9 +210,11 @@ WTaktuell.removeAll(SVIntron);
 
             }
             //falls ExonSkipping stattgefunden hat in anderer Genvariante, wäre dieses dann ein weiteres SVIntron
-            if(WTaktuell.isEmpty()) {
+            else {
+                //TODO: achtung hier werden auch die hinzugefügt die einfach vorher schon leer waren ohne dass sie SVs sind
                 SVProts.add(WTGenProteinID);
-            }}
+            }
+           }
 
         }
         Object[] ergebnis = new Object[2];

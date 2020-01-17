@@ -209,9 +209,13 @@ public class Main {
                         HashMap<String,HashSet<Section>> WTSE = (HashMap<String, HashSet<Section>>) possibleSkipis[0];
                         if(!WTSE.isEmpty()){
                             SkippedExons actualSkippedExon = GeneInProgress.skippedExonErstellen(possibleSkipis, GeneInProgress.getExons(), possibleSV);
-                            skippedExonsGen.add(actualSkippedExon);
+
+                                skippedExonsGen.add(actualSkippedExon);
+
+
                             actualSV.add(possibleSV);
-                        }}
+                        }
+                        }
                     }
                 }
                 if(!skippedExonsGen.isEmpty()){

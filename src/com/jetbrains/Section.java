@@ -57,5 +57,9 @@ public class Section implements Comparable {
         return beginning + ":" + ending;
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBeginning(), getEnding());
+    }
 }
 
