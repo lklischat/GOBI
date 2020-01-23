@@ -32,6 +32,9 @@ public class Main {
         public static void main (String[]args) throws ParseException, IOException /*oder throws IOException für beide?*/
         {
 
+            //TODO: Exceptions einbauen
+            //TODO: evtl Stringbuilder benutzen
+
             String inputpath;
             String outputpath;
             //ArrayList zum speichern der notwendingen Lines der Datei

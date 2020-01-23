@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b90ec3f6-bb22-43cb-b06e-00ee7c2fcd2c" name="Default Changelist" comment="" />
+    <list default="true" id="b90ec3f6-bb22-43cb-b06e-00ee7c2fcd2c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Exon_Skipping_jar/exonskipping.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Exon_Skipping_jar/exonskipping.jar" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,14 +24,14 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/com/jetbrains/WS20" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1W4fB6ddn4uztzcVoDy5d7N2kqk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/jetbrains/SkippedExons.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../read_simulator" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -82,7 +85,9 @@
       <workItem from="1579084934384" duration="467000" />
       <workItem from="1579093993823" duration="16644000" />
       <workItem from="1579257675946" duration="317000" />
-      <workItem from="1579275928441" duration="8314000" />
+      <workItem from="1579275928441" duration="8952000" />
+      <workItem from="1579460928373" duration="5566000" />
+      <workItem from="1579790960458" duration="2171000" />
     </task>
     <servers />
   </component>
