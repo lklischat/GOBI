@@ -15,32 +15,42 @@ public class Gene {
     *  */
 
     //Array GenInfo
-    protected String[] GenInfo = new String[6];
+    //protected String[] GenInfo = new String[6];
+    private String geneId;
+    private String geneSymbol;
+    private String Chromosom;
+    private String Strand;
+    private String nprots;
+    private String ntrans;
+
 
     //HashMap Exons
-    protected HashMap<String, ArrayList<Section>> Exons = new HashMap<>();
+    private HashMap<String, ArrayList<Section>> Exons = new HashMap<>();
 
     //TODO: setter verwenden
-    public void setIntrons(HashMap<String, ArrayList<Section>> introns) {
-        Introns = introns;
-    }
 
     //HashMap Introns
-    protected HashMap<String, ArrayList<Section>> Introns = new HashMap<>();
+    private HashMap<String, ArrayList<Section>> Introns = new HashMap<>();
 
     //Set transcripts
-    protected HashSet<String> transcriptIDs = new HashSet<>();
+    private HashSet<String> transcriptIDs = new HashSet<>();
 
-    public Gene(String[] genInfo, HashMap<String, ArrayList<Section>> exons, HashMap<String, ArrayList<Section>> introns, HashSet<String> transcriptIDs) {
-        GenInfo = genInfo;
+    public Gene(String geneId, String geneSymbol, String chromosom, String strand, HashMap<String, ArrayList<Section>> exons, HashMap<String, ArrayList<Section>> introns, HashSet<String> transcriptIDs) {
+        this.geneId = geneId;
+        this.geneSymbol = geneSymbol;
+        Chromosom = chromosom;
+        Strand = strand;
         Exons = exons;
         Introns = introns;
         this.transcriptIDs = transcriptIDs;
     }
 
-    public String[] getGenInfo() {
+
+
+
+    /*public String[] getGenInfo() {
         return GenInfo;
-    }
+    }*/
 
     public HashMap<String, ArrayList<Section>> getExons() {
         return Exons;
@@ -54,32 +64,23 @@ public class Gene {
         return transcriptIDs;
     }
 
-    public String genInfoAufbereitung(String[] GenInfo){
+    public String genInfoAufbereitung(){
         String Info = "";
-        Info += GenInfo[0] +"\t" + GenInfo[1] + "\t" + GenInfo[2] + "\t" + GenInfo[3] + "\t" + GenInfo[4] + "\t" + GenInfo[5] + "\t";
+        Info += geneId +"\t" + geneSymbol + "\t" + Chromosom + "\t" + Strand + "\t" + nprots + "\t" + ntrans + "\t";
         return Info;
     }
 
-    @Override
-    public String toString() {
-        return "Gene{" +
-                "GenInfo=" + Arrays.toString(GenInfo) +
-                ", Exons=" + Exons +
-                ", Introns=" + Introns +
-                ", transcriptIDs=" + transcriptIDs +
-                '}';
-    }
 
     //man gibt seine exons ein und bekommt seine introns raus
-    public HashMap<String, ArrayList<Section>> calculateIntrons(HashMap<String, ArrayList<Section>> exis){
+    public void calculateIntrons(){
         HashMap<String, ArrayList<Section>> inis = new HashMap<>();
-        Iterator<HashMap.Entry<String, ArrayList<Section>>> itr = exis.entrySet().iterator();
+        Iterator<HashMap.Entry<String, ArrayList<Section>>> itr = Exons.entrySet().iterator();
 
         while(itr.hasNext()){
             //proteinId holen als Key
             String proteinID = itr.next().getKey();
             //alle Sections durchgehen -> damit dann die Introns berechnen
-            ArrayList<Section> proteinSectiExons = exis.get(proteinID);
+            ArrayList<Section> proteinSectiExons = Exons.get(proteinID);
 
             //man muss die ArrayList noch sortieren
             //TODO: ist es nicht schlauer die Liste schon vorher zu sortieren?
@@ -109,7 +110,7 @@ public class Gene {
             inis.put(proteinID, proteinSectiIntrons);
 
         }
-        return inis;
+        this.Introns = inis;
     }
 
     
@@ -179,26 +180,6 @@ public class Gene {
                     wirklichLeer = wirklichLeer +1;
                 }
                 WTaktuell.removeAll(SVIntron);
-
-
-
-
-            //Sets zusammenlegen
-
-              /* int really = 0;
-                Iterator all = WTaktuell.iterator();
-                while(all.hasNext()) {
-                    Section aktuell = (Section) all.next();
-                    if (aktuell.getBeginning() == start) {
-                        really = really + 1;
-                    }
-                    if (aktuell.getEnding() == end) {
-                        really = really + 1;
-                    }
-                }
-                if(really !=2){
-                    WTaktuell.clear();
-                }*/
 
 
 
@@ -299,4 +280,40 @@ public class Gene {
 
     }
 
+
+    public void setIntrons(HashMap<String, ArrayList<Section>> introns) {
+        Introns = introns;
+    }
+
+    public String getGeneId() {
+        return geneId;
+    }
+
+    public String getGeneSymbol() {
+        return geneSymbol;
+    }
+
+    public String getChromosom() {
+        return Chromosom;
+    }
+
+    public String getStrand() {
+        return Strand;
+    }
+
+    public String getNprots() {
+        return nprots;
+    }
+
+    public String getNtrans() {
+        return ntrans;
+    }
+
+    public void setNprots(String nprots) {
+        this.nprots = nprots;
+    }
+
+    public void setNtrans(String ntrans) {
+        this.ntrans = ntrans;
+    }
 }

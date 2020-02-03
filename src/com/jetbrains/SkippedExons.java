@@ -69,16 +69,17 @@ public class SkippedExons {
     public String toString() {
         return SV.toString() + "\t" +
                 wtAufbereitung(WT) + "\t" +
-                idAufbereitung(SVProts) + "\t" +
                 idAufbereitung(WTProts) + "\t" +
-                maxNumSE + "\t" +
+                idAufbereitung(SVProts) + "\t" +
                 minNumSE + "\t" +
-                maxLenSE + "\t" +
-                minLenSE
+                maxNumSE + "\t" +
+                minLenSE + "\t" +
+                maxLenSE
                 ;
     }
 
     public int getMinNumSE() {
         return minNumSE;
     }
+
 }

@@ -22,9 +22,6 @@ public class Section implements Comparable {
     }
 
 
-    //TODO: geht der HashCode so?
-
-
     @Override
     public int compareTo(Object o) {
         Section secti = (Section) o;

@@ -7,8 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b90ec3f6-bb22-43cb-b06e-00ee7c2fcd2c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Exon_Skipping_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Exon_Skipping_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Exon_Skipping_jar/exonskipping.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Exon_Skipping_jar/exonskipping.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Exon_Skipping_jar/exonskipping1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Exon_Skipping_jar/exonskipping2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Exon_Skipping/com/jetbrains/Gene.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exon_Skipping/com/jetbrains/Gene.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Exon_Skipping/com/jetbrains/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exon_Skipping/com/jetbrains/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Exon_Skipping/com/jetbrains/Section.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exon_Skipping/com/jetbrains/Section.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Exon_Skipping/com/jetbrains/SkippedExons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exon_Skipping/com/jetbrains/SkippedExons.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../read_simulator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -87,7 +94,21 @@
       <workItem from="1579257675946" duration="317000" />
       <workItem from="1579275928441" duration="8952000" />
       <workItem from="1579460928373" duration="5566000" />
-      <workItem from="1579790960458" duration="2171000" />
+      <workItem from="1579790960458" duration="2266000" />
+      <workItem from="1579884810165" duration="1605000" />
+      <workItem from="1579951748340" duration="1829000" />
+      <workItem from="1580046013010" duration="15000" />
+      <workItem from="1580052448509" duration="1070000" />
+      <workItem from="1580059850035" duration="21000" />
+      <workItem from="1580122174188" duration="670000" />
+      <workItem from="1580240004463" duration="960000" />
+      <workItem from="1580302944136" duration="28000" />
+      <workItem from="1580558866582" duration="207000" />
+      <workItem from="1580565052426" duration="1261000" />
+      <workItem from="1580577482552" duration="6559000" />
+      <workItem from="1580740328874" duration="657000" />
+      <workItem from="1580743060861" duration="666000" />
+      <workItem from="1580762024374" duration="6829000" />
     </task>
     <servers />
   </component>

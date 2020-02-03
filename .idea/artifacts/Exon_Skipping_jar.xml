@@ -8,10 +8,6 @@
       <element id="extracted-dir" path="$USER_HOME$/Desktop/commons-cli-1.4/commons-cli-1.4-javadoc.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/Desktop/commons-cli-1.4/commons-cli-1.4-sources.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/Desktop/commons-cli-1.4/commons-cli-1.4-test-sources.jar" path-in-jar="/" />
-      <element id="file-copy" path="$PROJECT_DIR$/src/com/jetbrains/Gene.java" />
-      <element id="file-copy" path="$PROJECT_DIR$/src/com/jetbrains/Main.java" />
-      <element id="file-copy" path="$PROJECT_DIR$/src/com/jetbrains/Section.java" />
-      <element id="file-copy" path="$PROJECT_DIR$/src/com/jetbrains/SkippedExons.java" />
     </root>
   </artifact>
 </component>
